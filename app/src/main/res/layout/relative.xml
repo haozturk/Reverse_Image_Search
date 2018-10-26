@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33ff42">
+
+    <Button
+        android:id="@+id/tonysButton"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="138dp"
+        android:background="#f9ff33"
+        android:onClick="onClick"
+        android:text="Search the image" />
+
+    <EditText
+        android:id="@+id/urlInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Url"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/best_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text="Best Guess"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/imagesButton"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp"
+        android:background="#33f6ff"
+        android:onClick="onClickImagesButton"
+        android:text="Similar Images" />
+
+    <Button
+        android:id="@+id/chooseButton"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="185dp"
+        android:background="#ff3361"
+        android:onClick="onClickChoose"
+        android:text="Choose an image" />
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="212dp"
+        android:background="#ff33f3"
+        android:onClick="onClickUpload"
+        android:text="Upload to server" />
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/chooseButton"
+        android:layout_marginStart="32dp"
+        android:background="#ff3361"
+        android:onClick="onClickLaunchCamera"
+        android:text="Take Photo" />
+
+    <Button
+        android:id="@+id/urlButton"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="109dp"
+        android:background="#3399ff"
+        android:onClick="onClickUrl"
+        android:text="Search by Url"
+        android:visibility="visible" />
+
+</RelativeLayout>
